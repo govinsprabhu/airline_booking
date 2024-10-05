@@ -1,2 +1,3 @@
 - Taking exclusive lock at the seats
 - if one trasaction is already taken the seat, then the other trasaction should not get it
+- it should take the next available transaction

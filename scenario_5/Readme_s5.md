@@ -1,0 +1,4 @@
+- Taking exclusive lock at the seats
+- if one trasaction is already taken the seat, then the other trasaction should not get it
+- SKIP lock will be added
+- If two transaction are trying to get a row, if first trasaction go it then the 2nd transaction won't wait, it will skip

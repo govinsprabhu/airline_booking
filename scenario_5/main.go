@@ -22,7 +22,7 @@ func Insert(db *sql.DB, passenger_id int, trip_id int) error {
 		}
 	}()
 
-	select_query := `SELECT id FROM seats WHERE passenger_id IS NULL ORDER BY id LIMIT 1 FOR UPDATE`
+	select_query := `SELECT id FROM seats WHERE passenger_id IS NULL ORDER BY id LIMIT 1 FOR UPDATE SKIP LOCKED`
 
 	row := tx.QueryRow(select_query)
 	if row.Err() != nil {
