@@ -1,0 +1,1 @@
+- Allocating the first available seat to the passenger concurrently
